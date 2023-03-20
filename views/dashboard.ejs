@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1 align="center">DASHBOARD</h1>
+    <%trips.forEach((element)=>{%>
+        <h3><%=element.trip_name%></h3>
+    <%})%>
+    <a href="/trip" class="nav-link" >Create Trip</a>
+    <a href="/add" class="nav-link">Add Member</a>
+    <form method="post" action='/dashboard'>
+              <input type="text" name="tripname">
+              <input type="submit" value="PLANNING SCREEN">
+    </form>
+</body>
+</html>

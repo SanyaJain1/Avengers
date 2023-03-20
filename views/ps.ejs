@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planning screen</title>
+</head>
+<body>
+    <h1 align="center">PLANNING SCREEN</h1>
+    <%if(questions.length!=0){%>
+    <%questions.forEach((element)=>{%>
+        <h3><%=element.question%></h3>
+        <%for(var j=0;j<((element.options).length);j++){%>
+                <h3><%=(element.options)[j]%></h3>
+            <%}%>
+            <a href="/addo">ADD OPTION</a>
+    <%})%>
+    <%}%>
+    <a href="/addq">ADD A QUESTION</a>
+    <a href="/itenerary">ITENARARY SCREEN</a>
+</body>
+</html>

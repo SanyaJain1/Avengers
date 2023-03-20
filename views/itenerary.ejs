@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITENERARY SCREEN</title>
+</head>
+<body>
+    <h1 align="center">ITENARARY SCREEN</h1>
+    <h1 align="center">EVENTS</h1>
+    <%if(events.length!=0){%>
+        <%events.forEach((element)=>{%>
+            <h3><%=element.events%></h3>
+        <%})%>
+    <%}%>
+    <h3><a href='/event'>ADD EVENT</a></h3>
+    <h1 align="center">REQUIREMENTS</h1>
+    <%if(reqs.length!=0){%>
+        <%reqs.forEach((element)=>{%>
+            <h3><%=element.requires%></h3>
+        <%})%>
+    <%}%>
+    <h3><a href='/req'>ADD REQUIREMENT</a></h3>
+</body>
+</html>
